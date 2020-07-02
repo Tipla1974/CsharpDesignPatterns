@@ -6,7 +6,9 @@ namespace CsharpDesignPatternsOefeningen
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SpeelgoedFactory factory = new SpeelgoedFactory();
+            Speelgoed speelgoed = factory.KiesSpeelgoed(15);
+            Console.WriteLine(speelgoed.Prijs);
         }
     }
 }
